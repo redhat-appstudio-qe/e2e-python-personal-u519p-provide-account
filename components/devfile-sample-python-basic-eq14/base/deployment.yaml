@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-python-basic-eq14
     spec:
       containers:
-      - image: quay.io/redhat-appstudio-qe/test-images-protected:u519p-devfile-sample-python-basic-eq14
+      - image: quay.io/redhat-appstudio-qe/test-images-protected@sha256:d5bb5fbcb202b8007fb75f197b77987f7274ff1e259872fe9d41aaea644057b6
         name: my-python
         ports:
         - containerPort: 8081
