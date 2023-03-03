@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-eq14
+  namespace: e2e-demos-qhcr-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images-protected@sha256:d5bb5fbcb202b8007fb75f197b77987f7274ff1e259872fe9d41aaea644057b6
+        name: my-python
+        resources: {}
+status: {}
